@@ -16,31 +16,31 @@ The following data cleaning operations were performed in the SQL script:
 
 1. Standardizing Date Format
 
-  Converted the SaleDate column into a proper date format.
+  - Converted the SaleDate column into a proper date format.
 
-  Added a new column SaleDateConverted when necessary.
+  - Added a new column SaleDateConverted when necessary.
 
 2. Populating Missing Property Addresses
 
-  Used ParcelID to fill missing PropertyAddress values.
+  - Used ParcelID to fill missing PropertyAddress values.
 
 3. Splitting Address into Separate Columns
 
-  Extracted the street address and city from PropertyAddress.
+  - Extracted the street address and city from PropertyAddress.
 
-  Split OwnerAddress into OwnerSplitAddress, OwnerSplitCity, and OwnerSplitState.
+  - Split OwnerAddress into OwnerSplitAddress, OwnerSplitCity, and OwnerSplitState.
 
 4. Standardizing Categorical Values
 
-  Replaced 'Y' and 'N' in the SoldAsVacant column with 'Yes' and 'No' respectively.
+  - Replaced 'Y' and 'N' in the SoldAsVacant column with 'Yes' and 'No' respectively.
 
 5. Removing Duplicates
 
-  Identified duplicate records using ROW_NUMBER() and removed them.
+  - Identified duplicate records using ROW_NUMBER() and removed them.
 
 6. Dropping Unnecessary Columns
 
-  Removed unused columns such as OwnerAddress, TaxDistrict, PropertyAddress, and SaleDate.
+  - Removed unused columns such as OwnerAddress, TaxDistrict, PropertyAddress, and SaleDate.
 
 How to Use
 
